@@ -1,0 +1,2 @@
+. ./humidity.config
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?zip=$OpenWeatherMapZip,us&appid=$OpenWeatherMapAppId" | python -c "import sys, json; sys.stdout.write(str(json.load(sys.stdin)['main']['humidity']))"

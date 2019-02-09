@@ -1,0 +1,19 @@
+# Enter in your values and save this as humidity.config
+
+# This is the Nest device ID found by querying the /thermostats REST API
+# https://developers.nest.com/guides/api/how-to-read-data
+NestDevice=*
+
+# This is the access token given to a user of your "app" after they
+# connect their account to your app and give you permission to do
+# what you need to
+# https://developers.nest.com/guides/api/how-to-auth
+NestBearer=*
+
+# This is the zipcode you want to read outdoor humidity for
+OpenWeatherMapZip=*
+
+# This is the app ID given to you when you create a new OpenWeatherMap
+# application
+# https://home.openweathermap.org/api_keys
+OpenWeatherMapAppId=*
