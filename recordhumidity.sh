@@ -4,4 +4,6 @@ echo -n -e "\t" >> values.tsv
 echo -n -e "\t" >> values.tsv
 ./outdoorhumidity.sh >> values.tsv
 echo >> values.tsv
-./postexecute.sh
+if [ -f ./postexecute.sh ]; then
+	./postexecute.sh
+fi
