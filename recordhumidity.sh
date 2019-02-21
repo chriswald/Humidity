@@ -4,4 +4,4 @@ echo -n -e "\t" >> values.tsv
 echo -n -e "\t" >> values.tsv
 ./outdoorhumidity.sh >> values.tsv
 echo >> values.tsv
-php plot.php > /volume1/web/index.html
+./postexecute.sh

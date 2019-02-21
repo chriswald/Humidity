@@ -1,0 +1,2 @@
+# Add any actions you want to execute after the humidity values have
+# been retrieved and save this file as postexecute.sh
