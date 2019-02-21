@@ -10,7 +10,7 @@ $tsvString = fread($dataFile, filesize($filename));
 fclose($dataFile);
 
 $lines = explode("\n", $tsvString);
-$data = "";
+$data = [];
 for ($i = 0; $i < count($lines); $i++)
 {
 	if (strlen($lines[$i]) > 0)
@@ -27,8 +27,8 @@ foreach ($data as $value)
 {
 	$dt = date_parse_from_format("m/d/y H:i:s", $value[0]);
 	$dtStr = "new Date(" . $dt["year"] . "," . ($dt["month"]-1) . "," . $dt["day"] . "," . $dt["hour"] . "," . $dt["minute"] . "," . $dt["second"] . ")";
-	$idValue = $value[1]/100;
-	$odValue = $value[2]/100;
+	$idValue = intval($value[1])/100;
+	$odValue = intval($value[2])/100;
 	$indoorString .= "{x: $dtStr, y:$idValue},";
 	$outdoorString .= "{x: $dtStr, y:$odValue},";
 }
