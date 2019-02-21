@@ -87,6 +87,7 @@ function toogleDataSeries(e){
 
 }
 </script>
+<title>Humidity</title>
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
