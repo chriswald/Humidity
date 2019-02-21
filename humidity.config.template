@@ -10,7 +10,7 @@ NestDevice=*
 # https://developers.nest.com/guides/api/how-to-auth
 NestBearer=*
 
-# This is the zipcode you want to read outdoor humidity for
+# This is the zipcode you want to read outdoor humidity for (USA only)
 OpenWeatherMapZip=*
 
 # This is the app ID given to you when you create a new OpenWeatherMap
